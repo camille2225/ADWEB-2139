@@ -1,0 +1,30 @@
+<h1>Interpolation</h1>
+
+<!--String binding-->
+<p>Message : {{Intro}}</p>
+<!--property binding-->
+<input type="text" [value] = "MyName">
+<!--Style binding-->
+<h5 [style.color]="color">This is my Favorite color. Colored by style binding</h5>
+<!--class binding-->
+<p [class] = "appliedCSSClass">This applied class binding</p>
+<p [class.blue] = "notappliedCSSClass">This is not a class binding</p> 
+
+<!--event binding-->
+
+<h2>Event Binding</h2>
+<button (click) ="showData($event)">click here</button>
+<button on-click = "showData($event)"> Click Me Too</button>
+
+<!--inputs-->
+<br><br><h3>Using Keyup, Input, Keydown, and Blur Box</h3>
+<h4>Keyup</h4><input type="text" #keyupbox placeholder="keyup box" (keyup) = "getData(keyupbox.value) "/>
+<br> 
+<h4>Input</h4> <input type=text #keyinputbox placeholder="input box" (input)= "getData(keyinputbox.value) "/>
+<br> 
+<h4>Keydown</h4> <input type=text #keydownbox placeholder="keydown box" (keydown)="getData(keydownbox.value)"/>
+<br>
+<h4>Blur</h4><input  type=text #keyblurbox placeholder="blur box" (blur)= "getData(keyblurbox.value)"/>
+
+
+
