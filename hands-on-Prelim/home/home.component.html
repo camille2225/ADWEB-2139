@@ -1,0 +1,127 @@
+<!-- Image Interpolation-->
+<div class="homepic">
+<img src={{imageUrl}}>
+</div>
+
+<!--String Interpolation -->
+<h2>{{bordertext}}</h2>
+<h3>{{bordertext1}}</h3>
+
+<button type="button" class="btn btn-outline-dark">Early Bird Registration</button>
+<div class="border">
+</div>
+<hr>
+
+<!--One Way Binding-->
+<h1>{{titlemain}}</h1>
+<hr>
+
+
+<!--Image Binding-->
+
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin-right: auto; margin-left: 5%;">
+    
+    <!--France-->
+    <div class="col" id="card-size" style="width: 300px;">
+      <div class="card h-100">
+          <img src="{{image1}}" style="width: 276px; height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title text-start">{{country1}}</h5>
+          <p class="card-text">The largest country in Western Europe, has long been a gateway between the continent's
+            nothern and souther regions.
+          </p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Architecture and Fine Arts</p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Cultural Events</p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Safety and Security</p>
+        </div>
+        <div class="card-footer">
+          <a href="#"><p [style.color]="link" class="card-text">Learn More</p></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Seoul-->
+    <div class="col" id="card-size" style="width: 300px;">
+      <div class="card h-100">
+        <img src="{{image2}}" style="width: 276px; height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title text-start">{{country2}}</h5>
+          <p class="card-text">Korean Sôul, formally
+            Sôul-t'ûkpyôlsi ("Special City of Seoul"), city and capital
+            of South Korea (the Republic of Korea).
+          </p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Humanities and Arts</p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Cultural Events</p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Safety and Security</p>
+        </div>
+        <div class="card-footer">
+          <a href="#"><p [style.color]="link" class="card-text">Learn More</p></a>
+        </div>
+      </div>
+    </div>
+
+    <!--San Francisco-->
+    <div class="col" id="card-size"  style="width: 300px;">
+      <div class="card h-100">
+        <img src="{{image3}}" style="width: 276px; height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title text-start">{{country3}}</h5>
+          <p class="card-text">It is a cultural and financial centre of the western United States and one of the 
+            country's most cosmopolitan cities.
+          </p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Science and Technology</p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Cultural Events</p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Safety and Security</p>
+        </div>
+        <div class="card-footer">
+          <a href="#"><p [style.color]="link" class="card-text">Learn More</p></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Boston-->
+    <div class="col" id="card-size" style="width: 300px;"> 
+      <div class="card h-100">
+        <img src="{{image4}}" style="width: 276px; height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title text-start">{{country4}}</h5>
+          <p class="card-text">Best known for its famous baked beans, Fenway Park, The Boston Marathon
+            , and of course for the bar from Cheers.
+          </p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Engineering Tech</p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Cultural Events</p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text"> Safety and Security</p>
+        </div>
+        <div class="card-footer">
+          <a href="#"><p [style.color]="link" class="card-text">Learn More</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+

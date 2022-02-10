@@ -1,0 +1,21 @@
+<!--ngif Directives-->
+<h1 *ngIf="true">Below are our Corporate Partners</h1>
+
+<table class="table " style="width: 90%; margin-right: auto; margin-left: auto;">
+    <thead>
+      <tr>
+        <th scope="col" style="width: 30%;">Company</th>
+        <th scope="col" style="width: 30%;">Trademark</th>
+        <th scope="col">Sponsorship</th>
+        <th scope="col">Go to Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of partners">
+        <th>{{i.company}}</th>
+        <td><img class="pics"id="icon" [src]="i.trademark"/> </td>
+        <td> {{i.sponsorship}} </td>
+        <td> <a [href]="i.website"> View Website </a></td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,20 @@
+<!--form-->
+
+<h1>Fill the Form Below</h1>
+<hr>
+<form class="form">
+FirstName: <input name="name" type="text" [(ngModel)] = "Fname" class="feedback-input" placeholder="Name" />
+
+LastName: <input name="lastname" type="text" [(ngModel)] = "Lname" class="feedback-input" placeholder="Lastname" /><br>
+
+<br><p>Fullname: <b>{{Fname}} {{Lname}}</b></p>
+
+Enter Email Address: <input name= "email" type="text" [(ngModel)]="Email" class="feedback-input" placeholder="Email" /><br>
+
+<br><p>Email: <b>{{Email}}</b></p>
+
+Enter Institution/Affiliation: <input name = "ins" type="text" [(ngModel)]="School" class="feedback-input" placeholder="Institution" />
+
+<br><p>Academic Institution: <b>{{School}}</b></p>
+</form>
+
