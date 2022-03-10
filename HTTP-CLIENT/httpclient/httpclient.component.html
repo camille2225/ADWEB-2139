@@ -1,0 +1,43 @@
+<h1 class="text-center" style="color: tomato;">List of Main</h1>
+<table class="table table-striped" style="width: 90%; margin-right: auto; margin-left: auto; color: brown;">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Website</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let data of httpusers;">
+        <th>{{data.id}}</th>
+        <td>{{data.name}}</td>
+        <td>{{data.username}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.website}}</td>
+      </tr>
+    </tbody>
+</table>
+
+<!--Required 2-->
+
+<h1 class="text-center">List of Albums</h1>
+<table class="table table-striped" style="width: 90%; margin-right: auto; margin-left: auto; color:blueviolet;">
+    <thead>
+      <tr>
+        <th scope="col">User's ID</th>
+        <th scope="col">ID</th>
+        <th scope="col">Title</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let data of httplimit;">
+        <th>{{data.userId}}</th>
+        <td>{{data.id}}</td>
+        <td>{{data.title}}</td>
+      </tr>
+    </tbody>
+</table>
